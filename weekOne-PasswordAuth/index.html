@@ -12,18 +12,21 @@
     <div class="container flex flex-col align-center px-20 mx-auto mt-32 space-y-0 ">
         <h1 class="text-l max-w-md text-left mb-2">Password:</h1>
         <form action="" class="border-solid border-black">
-            <input type="text" placeholder="Enter Password" class="mb-3 text-l pr-14 pl-2 border-solid border-slate-700 border-2 rounded-md">
+            <input id='passwordEntry' type="text" placeholder="Enter Password" class="mb-3 text-l pr-14 pl-2 border-solid border-slate-700 border-2 rounded-md">
         </form>
    
         <div class="container flex flex-col align-center pr-10 pl-2 py-4 my-10  bg-slate-700 border-slate-700 border-1 rounded-md ">
             <ul class="">
-                <li class="text-slate-500"><i class="fa-solid fa-check"></i> Lower-case letter</li>
-                <li class="text-slate-500"><i class="fa-solid fa-check"></i> Upper-case letter</li>
-                <li class="text-slate-500"><i class="fa-solid fa-check"></i> Number</li>
-                <li class="text-slate-500"><i class="fa-solid fa-check"></i> More than 8 characters</li>
+                <li id= 'lowerCaseCheck' class="text-slate-500"><i class="fa-solid fa-check"></i> Lower-case letter</li>
+                <li id= 'upperCaseCheck' class="text-slate-500"><i class="fa-solid fa-check"></i> Upper-case letter</li>
+                <li id= 'numCheck' class="text-slate-500"><i class="fa-solid fa-check"></i> Number</li>
+                <li id= 'charCheck' class="text-slate-500"><i class="fa-solid fa-check"></i> More than 8 characters</li>
             </ul>
         </div>
     </div>
+
+
+    <script type="text/javascript" src="../weekOne-PasswordAuth/js/main.js"></script>
     
 </body>
 </html>
