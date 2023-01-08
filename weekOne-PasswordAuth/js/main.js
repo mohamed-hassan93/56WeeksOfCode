@@ -1,3 +1,22 @@
+document.querySelector('button').addEventListener('click',passwordTextAppear);
+
+
+
+function passwordTextAppear(){
+    var passwordType = document.getElementById('passwordEntry');
+
+    if(passwordType.type === 'password'){
+        passwordType.type = 'text'
+    }else{
+        passwordType.type = 'password'
+    }
+}
+
+
+
+
+
+
 let password = document.querySelector('input').value
 
 console.log(password);
