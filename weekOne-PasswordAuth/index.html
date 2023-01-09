@@ -11,9 +11,12 @@
 <body>
     <div class="container flex flex-col align-center px-20 mx-auto mt-32 space-y-0 ">
         <h1 class="text-l max-w-md text-left mb-2">Password:</h1>
-        <form action="" class="border-solid border-black flex flex-row" id="passwordEntry1" onsubmit="return false;">
-            <input id='passwordEntry' type="password" placeholder="Enter Password" class="mb-3 text-l pr-14 pl-2 border-solid border-slate-700 border-2 rounded-md">
-            <button class="border-solid border-black border-1 rounded-md"><i class="fa-solid fa-eye" id="psswrd" ></i></button>
+        <form action="" class="border-solid border-black flex flex-col" id="passwordEntry1" onsubmit="return false;">
+            <input onchange="passwordAuth()"  id='passwordEntry' type="password" placeholder="Enter Password" class="mb-1 text-l pr-14 pl-2 border-solid border-slate-700 border-2 rounded-md">
+            <div class="flex flex-row mb-1">
+                <input type ="checkbox" class="px-1" id="passCheck">
+                <h4 class="px-1">Show Password</h4>
+            </div>
         </form>
    
         <div class="container flex flex-col align-center pr-10 pl-2 py-4 my-10 w-72 bg-slate-700 border-slate-700 border-1 rounded-md md:w-72 md:mx-32  lg:w-72 lg:mx-80 xl:w-72 xl:mx-80">
